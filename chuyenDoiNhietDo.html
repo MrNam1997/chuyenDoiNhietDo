@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>TEMPERATURE CONVERTER</h2>
+<h4>type a value in the Fahrenheit field to convert the value to celius</h4>
+Fahrenheit: <input type="number" id="number" onchange="converter(this.value);"><br>
+<p id="myId"></p>
+<script>
+function converter(number) {
+    number = ((parseFloat(number) -32)/1.8).toFixed(2);
+    document.getElementById("myId").innerHTML= " Celius: "+ number;
+}
+</script>
+
+</body>
+</html>
